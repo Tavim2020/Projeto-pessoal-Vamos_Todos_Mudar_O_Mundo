@@ -130,9 +130,8 @@ const Contato = () => {
                         placeholder='Digite Algo Aqui Para que Possamos Ficar Sabendo...'/>
 
 
-                    <Button />
-
-                        
+                        <Button />
+       
                     </form>
 
                     <span className='division'></span>
