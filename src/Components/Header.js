@@ -1,8 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../Context/GlobalContext';
 import { HeaderContainer } from './styleHeader';
 
 const Header = () => {
+
+    const { mobile } = React.useContext(GlobalContext);
+    const [menu, setMenu] = React.useState(false);
+
+    function toggleMenu(){
+        setMenu(!menu);
+    }
+
+   
     return (
         <HeaderContainer>
 
@@ -11,6 +21,8 @@ const Header = () => {
                 <div className='left'>
                     <Link className='Home-Link' to='/'>Vamos Todos Mudar O Mundo?</Link>
                 </div>
+
+
 
                 <div className='right'>
 
@@ -23,9 +35,53 @@ const Header = () => {
                         <Link className='Contato-Link' to='/contato'>Contato</Link>
 
                         <Link className='Galeria-Link' to='/galeria'>Galeria</Link>
+                        
                     </nav>
 
                 </div>
+
+
+
+                {mobile && (
+                    <div className='containerMobile'>
+
+                        <div className='menu-fixed'>
+
+                            <div className='left-Mobile'>
+                                <Link className='Home-Link-Mobile' to='/'>Vamos Todos Mudar O Mundo?</Link>
+                            </div>
+
+
+
+                            <div className='icon-menu'>
+
+                                <img onClick={toggleMenu} 
+                                src={menu ? 'imagens/close-button.svg' : 'imagens/menu.svg'} 
+                                alt='Icone-Menu' />
+
+                            </div>
+
+                        </div>
+                
+
+                        {menu && <div className='menuMobile'>
+
+                            <nav>
+
+                                <Link className='Sobre-Link-Mobile' to='/sobre'>Sobre/Quem Sou</Link>
+
+                                <Link className='Contribuir-Link-Mobile' to='/contribuir'>Contribuir</Link>
+
+                                <Link className='Contato-Link-Mobile' to='/contato'>Contato</Link>
+
+                                <Link className='Galeria-Link-Mobile' to='/galeria'>Galeria</Link>
+
+                            </nav>
+
+                        </div>}
+                    </div>
+                )}
+
 
             </div>
             

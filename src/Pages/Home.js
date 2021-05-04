@@ -1,8 +1,16 @@
 import React from 'react'
 import { CotainerContato, GlobeContainer, SectionObjetivo } from './Styles/styleHome';
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../Context/GlobalContext';
 
 const Home = () => {
+
+    const { setStatePageNotFound, setFooterGlobal } = React.useContext(GlobalContext);
+
+    React.useEffect(()=>{
+        setStatePageNotFound(false);
+        setFooterGlobal(false);
+    })
 
     function facebook(){
         window.open('https://www.facebook.com/otavio.doasantoslopea', '_blank');

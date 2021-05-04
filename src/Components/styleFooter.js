@@ -67,4 +67,31 @@ export const FooterContainer = styled.footer`
         }
     }
 
+
+    @media(max-width: 980px){
+        height: 50vw;
+
+        .footerContainer{
+            h3{
+                font-size: 3.8vw;
+                padding-top: 6vw;
+                margin-bottom: 6vw;
+            }
+
+            .iconsFooter{
+                margin: 0 auto;
+                width: 33%;
+                margin-bottom: 6vw;
+
+                img{
+                    width: 9vw;
+                }
+            }
+
+            h4{
+                font-size: 3.1vw;
+            }
+        }
+    }
+
 `;

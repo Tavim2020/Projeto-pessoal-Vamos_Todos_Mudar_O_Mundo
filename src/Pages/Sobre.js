@@ -1,8 +1,17 @@
 import React from 'react'
 import { SobreContainer } from './Styles/styleSobre'
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../Context/GlobalContext';
 
 const Sobre = () => {
+
+    const { setStatePageNotFound, setFooterGlobal } = React.useContext(GlobalContext);
+
+    React.useEffect(()=>{
+        setStatePageNotFound(false);
+        setFooterGlobal(false);
+    })
+
     return (
         <SobreContainer>
 
@@ -21,7 +30,7 @@ const Sobre = () => {
 
 
                 <p>
-                    Olá, me chamo Otávio dos Santos Lopes, sou da cidade de Orlândia/SP e sou 
+                    Olá, me chamo Otávio dos Santos Lopes, moro na cidade de Orlândia/SP e sou 
                     uma pessoas simples como uma outra qualquer. Pai de três filhos lindos e 
                     dedicado na medida do possível para seus filhos, pois não moro com eles 
                     atualmente. Tenho um bom coração para as pessoas a minha volta, incluindo 

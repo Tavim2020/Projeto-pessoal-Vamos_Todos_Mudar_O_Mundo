@@ -9,38 +9,32 @@ import Contato from './Pages/Contato';
 import Galeria from './Pages/Galeria';
 import NotFound from './Pages/NotFound';
 import Footer from './Components/Footer';
+import Pagamento from './Pages/Pagamento';
+import { GlobalContext } from './Context/GlobalContext';
 
 function App() {
 
-  const [statePageNotFound, setStatePageNotFound] = React.useState(false);
+  const { statePageNotFound, footerGlobal } = React.useContext(GlobalContext);
 
-  React.useEffect(()=>{
-    if(window.location.pathname === '/' || window.location.pathname === '/sobre' || 
-    window.location.pathname === '/contribuir' || window.location.pathname === '/contato' || 
-    window.location.pathname === '/galeria'){
-      setStatePageNotFound(false);
-    }
-    else{
-      setStatePageNotFound(true);
-    }
-  }, [statePageNotFound]);
-
+  
 
 
   return (
     <div className="App">
-      <BrowserRouter>
-        {!statePageNotFound && <Header />}
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/sobre' element={<Sobre />} />
-          <Route path='/contribuir' element={<Contribuir />} />
-          <Route path='/contato' element={<Contato />} />
-          <Route path='/galeria' element={<Galeria />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
-        {!statePageNotFound && <Footer /> }
-      </BrowserRouter>
+     
+        <BrowserRouter>
+          {!statePageNotFound && <Header />}
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/sobre' element={<Sobre />} />
+            <Route path='/contribuir' element={<Contribuir />} />
+            <Route path='/contato' element={<Contato />} />
+            <Route path='/pagamento' element={<Pagamento />} />
+            <Route path='/galeria' element={<Galeria />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+          {!statePageNotFound &&  !footerGlobal && <Footer /> }
+        </BrowserRouter>
     </div>
   );
 }

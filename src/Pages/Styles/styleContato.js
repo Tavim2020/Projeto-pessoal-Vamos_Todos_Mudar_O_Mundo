@@ -73,6 +73,11 @@ export const ContatoContainer =  styled.main`
                     letter-spacing: 0.1vw;
                 }
 
+                p{
+                    font-size: 1.3vw;
+                    color: var(--azul-escuro);
+                }
+
                 select{
                     height: 3vw;
                     font-size: 1.55vw;
@@ -92,6 +97,9 @@ export const ContatoContainer =  styled.main`
                     padding-bottom: 0.5vw;
                     letter-spacing: 0.1vw;
                     line-height: 2vw;
+                }
+
+                .textarea-length{
                     margin-bottom: 3vw;
                 }
 
@@ -99,7 +107,7 @@ export const ContatoContainer =  styled.main`
 
             .division{
                 width: 0.08vw;
-                height: 70vw;
+                height: 78vw;
                 background-color: var(--azul-escuro);
                 display: flex;
                 margin-left: 2vw;
@@ -133,6 +141,32 @@ export const ContatoContainer =  styled.main`
 
        
 
+    }
+
+
+    footer{
+        width: 100vw;
+        height: 20vw;
+        background-color: var(--azul);
+
+        .containerInternoFooter{
+            margin: 0 auto;
+            width: 90%;
+            padding-top: 3vw;
+
+            h3{
+                margin-bottom: 2.2vw;
+                color: var(--white);
+                font-size: 2.2vw;
+                text-align: center;
+            }
+            
+
+            h4{
+                color: var(--white);
+                font-size: 1.4vw;
+            }
+        }
     }
     
 `;

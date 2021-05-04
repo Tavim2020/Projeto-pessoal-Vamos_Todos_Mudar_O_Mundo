@@ -1,8 +1,18 @@
 import React from 'react';
 import { ContribuirContainer } from './Styles/styleContribuir';
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../Context/GlobalContext';
 
 const Contribuir = () => {
+
+    const { setStatePageNotFound, setFooterGlobal } = React.useContext(GlobalContext);
+
+    React.useEffect(()=>{
+        setStatePageNotFound(false);
+        setFooterGlobal(false);
+    })
+
+
     return (
         <ContribuirContainer>
 

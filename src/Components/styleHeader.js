@@ -139,4 +139,106 @@ export const HeaderContainer = styled.header`
 
 
     }
+
+
+    @media(max-width: 980px){
+        height: 100%;
+
+        .containerInterno{
+
+            .left{
+                display: none;
+            }
+
+
+            .right{
+                display: none;
+            }
+
+            .containerMobile{
+                width: 100%;
+                height: 100%;
+
+                .menu-fixed{
+                    width: 100%;
+                    height: 12.2vw;
+                    display: flex;
+                    align-items: center;
+
+                    .left-Mobile{
+                        width: 70%;
+                        
+                        .Home-Link-Mobile{
+                            font-size: 4vw;
+                            font-weight: 600;
+                            color: var(--azul-escuro);
+                        }
+                    }
+
+
+                    .icon-menu{
+                        width: 30%;
+                        display: flex;
+                        justify-content: flex-end;
+
+                        img{
+                            width: 6vw;
+                            cursor: pointer;
+                            fill: #223843
+                        }
+                    }
+
+                }
+
+
+                .menuMobile{
+                    width: 100%;
+                    height: 30vw;
+                    display: flex;
+                    align-items: center;
+
+                    nav{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+
+                        .Sobre-Link-Mobile{
+                        font-size: 3.3vw;
+                        font-weight: 600;
+                        color: var(--azul-escuro);
+                        margin-bottom: 2vw;
+                        }
+
+                    
+
+                        .Contribuir-Link-Mobile{
+                            font-size: 3.3vw;
+                            font-weight: 600;
+                            color: var(--azul-escuro);
+                            margin-bottom: 2vw;
+                        }
+
+                        .Contato-Link-Mobile{
+                            font-size: 3.3vw;
+                            font-weight: 600;
+                            color: var(--azul-escuro);
+                            margin-bottom: 2vw;
+                        }
+
+                        .Galeria-Link-Mobile{
+                            font-size: 3.3vw;
+                            font-weight: 600;
+                            color: var(--azul-escuro);
+                        }
+                    }
+                    
+                }
+            }
+
+
+        }
+    }
 `;

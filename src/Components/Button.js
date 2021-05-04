@@ -25,7 +25,7 @@ const ButtonForm = styled.button`
 
 const Button = () => {
     return (
-        <ButtonForm type='button'>
+        <ButtonForm type='submit'>
             <img src='imagens/enviar.svg' alt='Enviar' />
             Enviar
         </ButtonForm>

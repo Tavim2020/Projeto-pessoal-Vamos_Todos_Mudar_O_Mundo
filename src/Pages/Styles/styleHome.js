@@ -135,6 +135,73 @@ export const GlobeContainer = styled.section`
         }
 
     }
+
+
+    @media(max-width: 980px){
+        width: 100vw;
+        height: 93vw;
+        background-color: var(--azul);
+
+
+        .background{
+            top: -0%;
+        }
+
+        .ContainerInternoGlobo{
+            flex-direction: column;
+
+
+            .leftContainer{
+                margin: 0 auto;
+                width: 70%;
+                align-items: center;
+                justify-content: center;
+
+                .title{
+                    margin: 0 auto;
+                    width: 100%;
+                    height: 85%;
+                    display: flex;
+                    align-items: center;
+
+                    h1{
+                        font-size: 4.8vw;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+
+                .icons{
+                    width: 100%;
+                    height: 5%;
+                    display: flex;
+                    align-items: flex-end;
+
+                    img{
+                        width: 9vw;
+                        border-radius: 1.2vw;
+                    }
+
+                    img:nth-child(2),
+                    img:nth-child(3),
+                    img:nth-child(4),
+                    img:nth-child(5){
+                        margin-left: 4.2vw;
+                    }
+                }
+
+            }
+
+
+            /* estilizando o globo terrestre */
+            .globo-terrestre{
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+        }
+    }
 `;
 
 
@@ -211,6 +278,64 @@ export const SectionObjetivo = styled.section`
         }
 
     }
+
+    @media(max-width: 980px){
+        height: 118vw;
+
+        .divInterna{
+            .titleObjetivo{
+                height: 12.2vw;
+                justify-content: center;
+
+                h3{
+                    font-size: 3.8vw;
+                }
+            }
+
+            .containerTextAndImage{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .textAndButton{
+                    margin: 0 auto;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        margin: 0 auto;
+                        font-size: 3.4vw;
+                        line-height: 6vw;
+                        margin-bottom: 8vw;
+                        text-align: center;
+                        width: 90%;
+                    }
+
+                    .buttonSaibaMais{
+                        margin: 0 auto;
+                        width: 26vw;
+                        margin-left: 0;
+                        height: 10.5vw;
+                        border: 0.18vw solid #555;
+                        font-size: 3.1vw;
+                        transition:  background 0.5s;
+                    }
+                }
+
+
+                .imageContainer{
+                    display: none;
+                }
+
+            }
+
+        }
+
+    }
     
 `;
 
@@ -257,6 +382,31 @@ export const CotainerContato = styled.section`
             font-weight: 600;
             color: var(--cinza-claro);
 
+        }
+    }
+
+    @media(max-width: 980px){
+        height: 75vw;
+
+        .contato{
+
+            h3{
+                font-size: 3.8vw;
+                margin-bottom: 6vw;
+            }
+
+            .first-P{
+                font-size: 3.4vw;
+                line-height: 4.5vw;
+                margin-bottom: 6vw;
+            }
+
+            .secondy-P{
+                font-size: 3.2vw;
+                width: 90%;
+                text-align: center;
+
+            }
         }
     }
 `;

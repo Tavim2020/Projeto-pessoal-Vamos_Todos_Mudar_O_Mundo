@@ -1,7 +1,7 @@
 import React from 'react'
 import { GlobalContext } from '../Context/GlobalContext';
 
-const NotFound = () => {
+const Pagamento = () => {
 
     const { setStatePageNotFound, setFooterGlobal } = React.useContext(GlobalContext);
 
@@ -10,12 +10,11 @@ const NotFound = () => {
         setFooterGlobal(true);
     })
 
-
     return (
         <div>
-            NotFound
+            
         </div>
     )
 }
 
-export default NotFound
+export default Pagamento
