@@ -4,7 +4,7 @@ import { GaleryContainer } from './Styles/styleGaleria';
 
 const Galeria = () => {
 
-    const { setStatePageNotFound, setFooterGlobal } = React.useContext(GlobalContext);
+    const { setStatePageNotFound, setFooterGlobal, mobile } = React.useContext(GlobalContext);
 
     const mainImage = React.useRef();
 
@@ -35,15 +35,39 @@ const Galeria = () => {
 
                 <div className='otherImg'>
 
-                    <img onClick={changeImage} src='imagens/mulherSorrindo.jpeg' alt='Mulher Sorrindo' />
+                    {!mobile && <img onClick={changeImage} src='imagens/mulherSorrindo.jpeg' alt='Mulher Sorrindo' />}
 
-                    <img onClick={changeImage} src='imagens/aprendendo.jpg' alt='Aprendendo' />
+                    {!mobile && <img onClick={changeImage} src='imagens/aprendendo.jpg' alt='Aprendendo' />}
 
-                    <img onClick={changeImage} src='imagens/mulherAprendendo.jpeg' alt='Mulher Aprendendo' />
+                    {!mobile && <img onClick={changeImage} src='imagens/mulherAprendendo.jpeg' alt='Mulher Aprendendo' />}
 
-                    <img onClick={changeImage} src='imagens/familiaAprendendo.jpeg' alt='Família Aprendendo' />
 
-                    <img onClick={changeImage} src='imagens/compartilhandoConhecimento.jpg' alt='Compartilhando Conhecimento' />
+                    {mobile && (
+                        <div className='mobilePhotos'> 
+
+
+                            <img onClick={changeImage} src='imagens/mulherSorrindo.jpeg' alt='Mulher Sorrindo' />
+
+                            <img onClick={changeImage} src='imagens/aprendendo.jpg' alt='Aprendendo' />
+
+                            <img onClick={changeImage} src='imagens/mulherAprendendo.jpeg' alt='Mulher Aprendendo' />
+
+                        </div>
+                    )}
+
+                    {mobile && (
+                        <div className='containerMobileImg'>
+
+                            <img onClick={changeImage} src='imagens/familiaAprendendo.jpeg' alt='Família Aprendendo' />
+
+                            <img onClick={changeImage} src='imagens/compartilhandoConhecimento.jpg' alt='Compartilhando Conhecimento' />
+
+                        </div>
+                    )}
+
+                    {!mobile && <img onClick={changeImage} src='imagens/familiaAprendendo.jpeg' alt='Família Aprendendo' />}
+
+                    {!mobile && <img onClick={changeImage} src='imagens/compartilhandoConhecimento.jpg' alt='Compartilhando Conhecimento' />}
 
                 </div>
 

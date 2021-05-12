@@ -26,7 +26,7 @@ const Contribuir = () => {
                     no caso... como terá conhecimentos repassados pessoalmente a crianças e terá gastos 
                     com produtos em geral, todo esses gastos serão custiados pelo projeto de forma 
                     totalmente transparente. Porém, não à apenas esse método de contribuição. Como foi 
-                    comentado na página <Link to='/sobre' className='sobre'>sobre a empresa</Link>, a outros modelos de 
+                    comentado na página <Link to='/sobre' className='sobre'>sobre o projeto</Link>, a outros modelos de 
                     contribuir com o projeto em si.
                 </p>
 

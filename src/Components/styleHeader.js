@@ -166,10 +166,10 @@ export const HeaderContainer = styled.header`
                     align-items: center;
 
                     .left-Mobile{
-                        width: 70%;
+                        width: 90%;
                         
                         .Home-Link-Mobile{
-                            font-size: 4vw;
+                            font-size: 5vw;
                             font-weight: 600;
                             color: var(--azul-escuro);
                         }
@@ -177,14 +177,16 @@ export const HeaderContainer = styled.header`
 
 
                     .icon-menu{
-                        width: 30%;
+                        width: 10%;
                         display: flex;
                         justify-content: flex-end;
 
                         img{
-                            width: 6vw;
+                            width: 7.5vw;
                             cursor: pointer;
-                            fill: #223843
+                            fill: #223843;
+                            transition: 1s;
+                            transform: ${({menu}) => menu ? 'rotateZ(90deg)' : 'rotateZ(0deg)'};          
                         }
                     }
 
@@ -193,7 +195,7 @@ export const HeaderContainer = styled.header`
 
                 .menuMobile{
                     width: 100%;
-                    height: 30vw;
+                    height: 38vw;
                     display: flex;
                     align-items: center;
 
@@ -206,30 +208,30 @@ export const HeaderContainer = styled.header`
 
 
                         .Sobre-Link-Mobile{
-                        font-size: 3.3vw;
+                        font-size: 4.3vw;
                         font-weight: 600;
                         color: var(--azul-escuro);
-                        margin-bottom: 2vw;
+                        margin-bottom: 3.3vw;
                         }
 
                     
 
                         .Contribuir-Link-Mobile{
-                            font-size: 3.3vw;
+                            font-size: 4.3vw;
                             font-weight: 600;
                             color: var(--azul-escuro);
-                            margin-bottom: 2vw;
+                            margin-bottom: 3.3vw;
                         }
 
                         .Contato-Link-Mobile{
-                            font-size: 3.3vw;
+                            font-size: 4.3vw;
                             font-weight: 600;
                             color: var(--azul-escuro);
-                            margin-bottom: 2vw;
+                            margin-bottom: 3.3vw;
                         }
 
                         .Galeria-Link-Mobile{
-                            font-size: 3.3vw;
+                            font-size: 4.3vw;
                             font-weight: 600;
                             color: var(--azul-escuro);
                         }

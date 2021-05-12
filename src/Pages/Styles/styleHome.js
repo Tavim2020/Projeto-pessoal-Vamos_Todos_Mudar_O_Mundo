@@ -153,19 +153,19 @@ export const GlobeContainer = styled.section`
 
             .leftContainer{
                 margin: 0 auto;
-                width: 70%;
+                width: 80%;
                 align-items: center;
                 justify-content: center;
 
                 .title{
                     margin: 0 auto;
                     width: 100%;
-                    height: 85%;
+                    height: 75%;
                     display: flex;
                     align-items: center;
 
                     h1{
-                        font-size: 4.8vw;
+                        font-size: 5.8vw;
                         width: 100%;
                         text-align: center;
                     }
@@ -174,12 +174,12 @@ export const GlobeContainer = styled.section`
 
                 .icons{
                     width: 100%;
-                    height: 5%;
+                    height: 25%;
                     display: flex;
                     align-items: flex-end;
 
                     img{
-                        width: 9vw;
+                        width: 11vw;
                         border-radius: 1.2vw;
                     }
 
@@ -280,7 +280,7 @@ export const SectionObjetivo = styled.section`
     }
 
     @media(max-width: 980px){
-        height: 118vw;
+        height: 138vw;
 
         .divInterna{
             .titleObjetivo{
@@ -288,7 +288,7 @@ export const SectionObjetivo = styled.section`
                 justify-content: center;
 
                 h3{
-                    font-size: 3.8vw;
+                    font-size: 4.5vw;
                 }
             }
 
@@ -308,7 +308,7 @@ export const SectionObjetivo = styled.section`
 
                     p{
                         margin: 0 auto;
-                        font-size: 3.4vw;
+                        font-size: 4.1vw;
                         line-height: 6vw;
                         margin-bottom: 8vw;
                         text-align: center;
@@ -321,7 +321,7 @@ export const SectionObjetivo = styled.section`
                         margin-left: 0;
                         height: 10.5vw;
                         border: 0.18vw solid #555;
-                        font-size: 3.1vw;
+                        font-size: 3.8vw;
                         transition:  background 0.5s;
                     }
                 }
@@ -386,23 +386,23 @@ export const CotainerContato = styled.section`
     }
 
     @media(max-width: 980px){
-        height: 75vw;
+        height: 103vw;
 
         .contato{
 
             h3{
-                font-size: 3.8vw;
+                font-size: 4.5vw;
                 margin-bottom: 6vw;
             }
 
             .first-P{
-                font-size: 3.4vw;
-                line-height: 4.5vw;
+                font-size: 4.1vw;
+                line-height: 6.5vw;
                 margin-bottom: 6vw;
             }
 
             .secondy-P{
-                font-size: 3.2vw;
+                font-size: 3.8vw;
                 width: 90%;
                 text-align: center;
 

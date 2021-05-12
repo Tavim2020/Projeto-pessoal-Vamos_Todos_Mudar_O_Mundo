@@ -69,13 +69,14 @@ export const FooterContainer = styled.footer`
 
 
     @media(max-width: 980px){
-        height: 50vw;
+        height: 68vw;
 
         .footerContainer{
             h3{
-                font-size: 3.8vw;
+                font-size: 4.5vw;
                 padding-top: 6vw;
                 margin-bottom: 6vw;
+                line-height: 6vw;
             }
 
             .iconsFooter{
@@ -84,12 +85,12 @@ export const FooterContainer = styled.footer`
                 margin-bottom: 6vw;
 
                 img{
-                    width: 9vw;
+                    width: 11vw;
                 }
             }
 
             h4{
-                font-size: 3.1vw;
+                font-size: 3.8vw;
             }
         }
     }

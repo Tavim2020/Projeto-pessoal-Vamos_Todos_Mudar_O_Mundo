@@ -120,6 +120,7 @@ export const ContatoContainer =  styled.main`
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
                 
                 p{
                     text-align: center;
@@ -135,6 +136,20 @@ export const ContatoContainer =  styled.main`
                             text-decoration: underline;
                         }
                     }
+
+                }
+
+                form{
+                    width: 100%;
+                    height: 5vw;
+                    margin-top: 3vw;
+                    input{
+                        margin: 0 auto;
+                        width: 25%;
+                        height: 100%;
+                        background-color: var(--white);
+                    }
+
                 }
             }
         }
@@ -169,4 +184,134 @@ export const ContatoContainer =  styled.main`
         }
     }
     
+
+    @media(max-width: 980px){
+        .container-wrapper{
+
+            .titleContato{
+                h2{
+                    margin-top: 6vw;
+                    font-size: 5vw;
+                    margin-bottom: 6vw;
+                }
+
+                h4{
+                    font-size: 3.8vw;
+                    line-height: 4vw;
+                    margin-bottom: 4.5vw;
+
+                    img{
+                        width: 4vw;
+                        margin-left: 4vw;
+                    }
+                }
+
+            }
+
+
+            .formAndCosts{
+                flex-direction: column;
+                margin-bottom: 6vw;
+
+                form{
+                    width: 100%;
+
+                    label{
+                        font-size: 4.15vw;
+                        margin-top: 5vw;
+                        margin-bottom: 2.5vw;
+
+                        strong{
+                            font-size: 4.15vw;
+                        }
+                    }
+
+                    input{
+                        height: 7vw;
+                        padding-left: 2.5vw;
+                        font-size: 4.15vw;
+                        letter-spacing: 0.3vw;
+                    }
+
+                    p{
+                        font-size: 3.6vw;
+                    }
+
+                    select{
+                        height: 7vw;
+                        font-size: 4.15vw;
+                        padding-left: 2.5vw;
+                    }
+
+                    textarea{
+                        max-height: 30vw;
+                        min-height: 20vw;
+                        font-size: 4.15vw;
+                        padding-left: 2.5vw;
+                        padding-right: 2.5vw;
+                        padding-top: 1vw;
+                        padding-bottom: 1vw;
+                        letter-spacing: 0.25vw;
+                        line-height: 4vw;
+                    }
+
+                    .textarea-length{
+                        margin-bottom: 6vw;
+                    }
+
+                }
+
+                .division{
+                   display: none
+                }
+
+
+                .anonymous-payment{
+                    width: 100%;
+                    margin-top: 20vw;
+                    margin-bottom: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    p{
+                        font-size: 4.5vw;
+                    }
+
+                    form{
+                        width: 100%;
+                        height: 18vw;
+                        margin-top: 10vw;
+                        input{
+                            margin: 0 auto;
+                            width: 55%;
+                            height: 100%;
+                        }
+
+                    }
+                }
+            }
+
+        
+
+        }
+
+
+        footer{
+            height: 55vw;
+
+            .containerInternoFooter{
+                padding-top: 6vw;
+
+                h3{
+                    margin-bottom: 4.5vw;
+                    font-size: 4.5vw;
+                }
+                
+
+                h4{
+                    font-size: 3.6vw;
+                }
+            }
+        }
+    }
 `;

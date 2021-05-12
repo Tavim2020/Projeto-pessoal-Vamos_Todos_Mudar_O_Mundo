@@ -12,9 +12,23 @@ const Header = () => {
         setMenu(!menu);
     }
 
+
+    React.useEffect(()=>{
+        if(window.screen.width <= 980){
+            setMenu(true);
+
+            setTimeout(()=>{
+                setMenu(false);
+            }, 2000)
+
+        }
+
+
+    }, [])
+
    
     return (
-        <HeaderContainer>
+        <HeaderContainer menu={menu}>
 
             <div className='containerInterno'>
 
@@ -53,11 +67,12 @@ const Header = () => {
 
 
 
-                            <div className='icon-menu'>
+                            <div className='icon-menu' menu={menu.value}>
 
                                 <img onClick={toggleMenu} 
                                 src={menu ? 'imagens/close-button.svg' : 'imagens/menu.svg'} 
-                                alt='Icone-Menu' />
+                                alt='Icone-Menu' 
+                                menu={menu.value}/>
 
                             </div>
 

@@ -59,4 +59,38 @@ export const SobreContainer = styled.article`
             }
         }
     }
+
+
+    @media(max-width: 980px){
+        .containerInternoSobre{
+            h3{
+                font-size: 4.5vw;
+                margin-top: 6vw;
+                margin-bottom: 6vw;
+                text-align: center;
+            }
+
+            p{
+                font-size: 4.1vw;
+                line-height: 4vw;
+                text-align: center;
+            }
+
+            li{
+                font-size: 4.35vw;
+                margin-top: 8vw;
+                margin-bottom: 6vw;
+            }
+
+            h4{
+                font-size: 3.8vw;
+                line-height: 4vw;
+                margin-bottom: 4.5vw;
+            }
+
+            h4:last-child{
+                margin-bottom: 6vw;
+            }
+        }
+    }
 `;

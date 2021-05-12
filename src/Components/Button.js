@@ -21,6 +21,18 @@ const ButtonForm = styled.button`
         background-color: var(--green);
         color: var(--white);
     }
+
+    @media(max-width: 980px){
+        width: 30vw; 
+        height: 12vw;
+        font-size: 4.15vw;
+        margin-top: 3vw;
+
+        img{
+            width: 5vw;
+            margin-right: 3vw;
+        }
+    }
 `;
 
 const Button = () => {

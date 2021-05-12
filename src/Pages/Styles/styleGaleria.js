@@ -46,4 +46,56 @@ export const GaleryContainer = styled.section`
             }
         }
     }
+
+
+    @media(max-width: 980px){
+        height: 170vw;
+
+        .interno{
+
+
+            .main-image{
+                width: 100%;
+                height: 50%;
+                margin-top: 6vw;
+                margin-bottom: 6vw;
+            }
+
+            .otherImg{
+                margin-top: 15vw;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+
+                .mobilePhotos{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    gap: 4vw;
+
+                    img{
+                        width: 100%;
+                        height: 28vw;
+                    }
+                        
+                }
+
+                
+                .containerMobileImg{
+                    margin: 0 auto;
+                    width: 70vw;
+                    display: flex;
+                    align-items: center;
+
+                    img{
+                        width: 28vw;
+                        height: 28vw;
+                        margin-top: 4vw;
+                    }
+                }
+
+            }
+
+        }
+    }
 `;

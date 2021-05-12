@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../Components/Button';
 import { ContatoContainer } from './Styles/styleContato';
-import { Link } from 'react-router-dom';
 import { GlobalContext } from '../Context/GlobalContext';
 
 
@@ -199,9 +198,23 @@ const Contato = () => {
 
                         <p>
                             Para você que não gostaria de se indentificar e queira contribuir
-                            com os custos do projeto, <Link to='/pagamento' 
-                            className='payment'> Clique Aqui!</Link>
+                            com os custos do projeto, <strong className='payment'>Clique Abaixo!</strong>
                         </p>
+
+
+                        <form 
+                        action="https://pagseguro.uol.com.br/checkout/v2/donation.html" 
+                        method="post">
+
+                            {/* <!-- NÃO EDITE OS COMANDOS DAS LINHAS ABAIXO --> */}
+                            <input type="hidden" name="currency" value="BRL" />
+                            <input type="hidden" name="receiverEmail" value="tavimvidaloka@gmail.com" />
+                            <input type="hidden" name="iot" value="button" />
+                            <input type="image" 
+                            src="https://stc.pagseguro.uol.com.br/public/img/botoes/doacoes/120x53-doar.gif" 
+                            name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!" />
+
+                        </form>
 
                     </div>
 
@@ -219,7 +232,7 @@ const Contato = () => {
                           o objetivo de mudar o mundo com conhecimento.
                       </h4>
 
-                      <h4>Endereço raiz: Rua 16</h4>
+                      <h4>Endereço Raiz: Rua 16</h4>
 
                       <h4>Número: 740A</h4>
 

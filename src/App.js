@@ -9,7 +9,6 @@ import Contato from './Pages/Contato';
 import Galeria from './Pages/Galeria';
 import NotFound from './Pages/NotFound';
 import Footer from './Components/Footer';
-import Pagamento from './Pages/Pagamento';
 import { GlobalContext } from './Context/GlobalContext';
 
 function App() {
@@ -29,7 +28,6 @@ function App() {
             <Route path='/sobre' element={<Sobre />} />
             <Route path='/contribuir' element={<Contribuir />} />
             <Route path='/contato' element={<Contato />} />
-            <Route path='/pagamento' element={<Pagamento />} />
             <Route path='/galeria' element={<Galeria />} />
             <Route path='*' element={<NotFound />} />
           </Routes>
